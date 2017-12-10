@@ -1,4 +1,8 @@
 # -*- coding: utf-8 -*-
+
+# Some errors here
+test - test + 20
+
 import datetime
 import scrapy
 from galeria.items import GaleriaItem
@@ -20,7 +24,7 @@ class BasicSpider(scrapy.Spider):
                  ]
 
     def parse(self, response):
-        for post_url in response.css('div.post-image > a ::attr(href)').extract():
+     \  for post_url in response.css('div.post-image > a ::attr(href)').extract():
             yield scrapy.Request(response.urljoin(post_url), callback=self.parse_post)
         next_page = response.css('a.next.page-numbers ::attr(href)').extract_first()
         if next_page is not None:
