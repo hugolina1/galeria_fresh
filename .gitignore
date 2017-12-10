@@ -1,0 +1,10 @@
+*.jl
+*.json
+<<<<<<< HEAD
+zyski
+.scrapy/deltafetch
+.scrapy/httpcache
+=======
+./scrapy/deltafetch
+./scrapy/httpcache
+>>>>>>> acbe097c808dc1f11b42d42d6854c1df133f962c
