@@ -7,5 +7,5 @@ class Post(models.Model):
     Defines the attributes of a post
     """
     text = models.TextField()
-    url = models.TextField()
+    link = models.TextField()
     date = models.TextField()

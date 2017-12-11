@@ -1,6 +1,6 @@
 from .models import Post
 from rest_framework import viewsets
-from serwis.rest.serializers import PostSerializer
+from rest.serializers import PostSerializer
 from django.shortcuts import render
 
 
