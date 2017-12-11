@@ -1,14 +1,12 @@
 # -*- coding: utf-8 -*-
 
-# Some errors here
-test - test + 20
-
 import datetime
 import scrapy
 from galeria.items import GaleriaItem
 from scrapy.loader import ItemLoader
 from scrapy.loader.processors import MapCompose
 from scrapy.http import Request
+
 
 class BasicSpider(scrapy.Spider):
     name = 'prawie'
