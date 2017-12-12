@@ -18,11 +18,12 @@ DATABASE = {
    'drivername': 'postgres',
    'host': 'localhost',
    'port': '5432',
-   'username': 'bwafc',
-   'password': 'linijka',
+   'username': '',
+   'password': '',
    'database': 'scrape3'
 }
 
+FEED_EXPORT_ENCODING = 'utf-8'
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 USER_AGENT = 'galeria-spider (sciasek@o2.pl)'
@@ -57,9 +58,9 @@ ROBOTSTXT_OBEY = True
 # See http://scrapy.readthedocs.org/en/latest/topics/spider-middleware.html
 SPIDER_MIDDLEWARES = {
     'galeria.middlewares.GaleriaSpiderMiddleware': 543,
-    'scrapy_deltafetch.DeltaFetch': 100,
+#    'scrapy_deltafetch.DeltaFetch': 100,
 }
-DELTAFETCH_ENABLED = True
+#DELTAFETCH_ENABLED = True
 # Enable or disable downloader middlewares
 # See http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
