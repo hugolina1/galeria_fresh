@@ -21,5 +21,5 @@ class Posts(DeclarativeBase):
 
     id = Column(Integer, primary_key=True)
     text = Column('text', String)
-    url = Column('link', String)
-    date = Column('date', String)
+#    url = Column('link', String)
+#    date = Column('date', String)

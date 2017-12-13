@@ -22,7 +22,7 @@ class BasicSpider(scrapy.Spider):
                  ]
 
     def parse(self, response):
-     \  for post_url in response.css('div.post-image > a ::attr(href)').extract():
+        for post_url in response.css('div.post-image > a ::attr(href)').extract():
             yield scrapy.Request(response.urljoin(post_url), callback=self.parse_post)
         next_page = response.css('a.next.page-numbers ::attr(href)').extract_first()
         if next_page is not None:
@@ -41,6 +41,6 @@ class BasicSpider(scrapy.Spider):
 
         l.add_xpath('text', '//div[@class="entry-content"]//text()[re:test(., "\w+")]')#, MapCompose(str.strip))
 
-        l.add_value('url', response.url)
-        l.add_value('date', datetime.datetime.now())
+#        l.add_value('url', response.url)
+#        l.add_value('date', datetime.datetime.now())
         yield l.load_item()

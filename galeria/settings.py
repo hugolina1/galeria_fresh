@@ -20,7 +20,7 @@ DATABASE = {
    'port': '5432',
    'username': 'bwafc',
    'password': 'linijka',
-   'database': 'scrape3'
+   'database': 'scrapy2'
 }
 
 
