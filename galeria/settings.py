@@ -16,10 +16,10 @@ NEWSPIDER_MODULE = 'galeria.spiders'
 
 DATABASE = {
    'drivername': 'postgres',
-   'host': 'localhost',
+   'host': '',
    'port': '5432',
-   'username': 'bwafc',
-   'password': 'linijka',
+   'username': '',
+   'password': '',
    'database': 'scrapy2'
 }
 
@@ -55,11 +55,11 @@ ROBOTSTXT_OBEY = True
 
 # Enable or disable spider middlewares
 # See http://scrapy.readthedocs.org/en/latest/topics/spider-middleware.html
-SPIDER_MIDDLEWARES = {
-    'galeria.middlewares.GaleriaSpiderMiddleware': 543,
-    'scrapy_deltafetch.DeltaFetch': 100,
-}
-DELTAFETCH_ENABLED = True
+# SPIDER_MIDDLEWARES = {
+#     'galeria.middlewares.GaleriaSpiderMiddleware': 543,
+#     'scrapy_deltafetch.DeltaFetch': 100,
+# }
+# DELTAFETCH_ENABLED = True
 # Enable or disable downloader middlewares
 # See http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
