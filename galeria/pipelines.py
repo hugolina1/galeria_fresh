@@ -1,5 +1,5 @@
 from sqlalchemy.orm import sessionmaker
-from models import Posts, db_connect, create_posts_table
+from models import Rest_Posts, db_connect, create_posts_table
 
 
 class GaleriaPipeline(object):
@@ -18,7 +18,7 @@ class GaleriaPipeline(object):
        This method is called for every item pipeline component.
        """
        session = self.Session()
-       post = Posts(**item)
+       post = Rest_Posts(**item)
 
        try:
            session.add(post)

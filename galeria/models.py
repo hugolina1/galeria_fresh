@@ -15,9 +15,9 @@ def db_connect():
 def create_posts_table(engine):
     DeclarativeBase.metadata.create_all(engine)
 
-class Posts(DeclarativeBase):
+class Rest_Posts(DeclarativeBase):
     """Sqlalchemy deals model"""
-    __tablename__ = "posts"
+    __tablename__ = "rest_posts"
 
     id = Column(Integer, primary_key=True)
     text = Column('text', String)
