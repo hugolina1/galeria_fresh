@@ -2,5 +2,5 @@
 *.json
 .scrapy/deltafetch
 .scrapy/httpcache
-.idea/workspace.xml
+.idea
 
