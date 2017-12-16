@@ -3,4 +3,6 @@
 .scrapy/deltafetch
 .scrapy/httpcache
 .idea
-
+galeria/spiders/basic.py
+galeria/spiders/posts.py
+*.pyc
