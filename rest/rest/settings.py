@@ -41,6 +41,14 @@ INSTALLED_APPS = [
     'rest'
 ]
 
+<<<<<<< HEAD:rest/rest/settings.py
+=======
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': [],
+    'TEST_REQUEST_DEFAULT_FORMAT': 'json'
+}
+
+>>>>>>> a6c0765b6801b8caee53e5efc11f0f1b468bf419:serwis/serwis/settings.py
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -78,10 +86,17 @@ WSGI_APPLICATION = 'rest.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
+<<<<<<< HEAD:rest/rest/settings.py
         'NAME': 'scrapy2',
         'USER': '',
         'PASSWORD': '',
         'HOST': '',
+=======
+        'NAME': 'scrape3',
+        'USER': '',
+        'PASSWORD': '',
+        'HOST': 'localhost',
+>>>>>>> a6c0765b6801b8caee53e5efc11f0f1b468bf419:serwis/serwis/settings.py
         'PORT': '5432'
     }
 }

@@ -14,8 +14,14 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
+<<<<<<< HEAD:rest/rest/urls.py
 from django.conf.urls import url
 from rest.api.views import PostListCreateAPIView
+=======
+from django.conf.urls import url, include
+from rest_framework import routers
+from rest import views
+>>>>>>> a6c0765b6801b8caee53e5efc11f0f1b468bf419:serwis/serwis/urls.py
 
 
 urlpatterns = [

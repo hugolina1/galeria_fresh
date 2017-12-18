@@ -20,9 +20,14 @@ DATABASE = {
    'port': '5432',
    'username': '',
    'password': '',
+<<<<<<< HEAD
    'database': 'scrapy2'
+=======
+   'database': 'scrape3'
+>>>>>>> a6c0765b6801b8caee53e5efc11f0f1b468bf419
 }
 
+FEED_EXPORT_ENCODING = 'utf-8'
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 USER_AGENT = 'galeria-spider (sciasek@o2.pl)'
@@ -55,11 +60,19 @@ ROBOTSTXT_OBEY = True
 
 # Enable or disable spider middlewares
 # See http://scrapy.readthedocs.org/en/latest/topics/spider-middleware.html
+<<<<<<< HEAD
 # SPIDER_MIDDLEWARES = {
 #     'galeria.middlewares.GaleriaSpiderMiddleware': 543,
 #     'scrapy_deltafetch.DeltaFetch': 100,
 # }
 # DELTAFETCH_ENABLED = True
+=======
+SPIDER_MIDDLEWARES = {
+    'galeria.middlewares.GaleriaSpiderMiddleware': 543,
+#    'scrapy_deltafetch.DeltaFetch': 100,
+}
+#DELTAFETCH_ENABLED = True
+>>>>>>> a6c0765b6801b8caee53e5efc11f0f1b468bf419
 # Enable or disable downloader middlewares
 # See http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
