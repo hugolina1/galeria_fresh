@@ -2,4 +2,5 @@ Scrapy
 SQLAlchemy
 django
 djangorestframework
-
+psycopg2
+scrapy-deltafetch

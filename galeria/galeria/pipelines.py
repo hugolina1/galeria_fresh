@@ -1,5 +1,5 @@
 from sqlalchemy.orm import sessionmaker
-from models import Rest_Posts, db_connect, create_posts_table
+from .models import Rest_Posts, db_connect, create_posts_table
 
 
 class GaleriaPipeline(object):

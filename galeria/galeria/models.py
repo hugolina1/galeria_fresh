@@ -1,7 +1,7 @@
 from sqlalchemy import create_engine, Column, Integer, String
 from sqlalchemy.engine.url import URL
 from sqlalchemy.ext.declarative import declarative_base
-import settings
+from galeria import settings
 
 DeclarativeBase = declarative_base()
 
