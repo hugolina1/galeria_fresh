@@ -18,8 +18,8 @@ DATABASE = {
    'drivername': 'postgres',
    'host': 'localhost',
    'port': '5432',
-   'username': 'bwafc',
-   'password': 'linijka',
+   'username': 'jacekraczkowski',
+   'password': 'galeriazyskow',
    'database': 'scrapy2'
 }
 
