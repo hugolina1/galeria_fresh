@@ -16,7 +16,7 @@ NEWSPIDER_MODULE = 'galeria.spiders'
 
 DATABASE = {
    'drivername': 'postgres',
-   'host': 'db',
+   'host': 'localhost',
    'port': '5432',
    'username': 'jacek',
    'password': 'raczkowski',

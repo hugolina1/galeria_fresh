@@ -1,18 +1,18 @@
-version: '3.1'
+version: '2'
 services:
    db:
      restart: always
      image: postgres:9.6
      environment:
-       - POSTGRES_USER=jacek
-       - POSTGRES_PASSWORD=raczkowski
+       - POSTGRES_USER=bwafc
+       - POSTGRES_PASSWORD=linijka
        - POSTGRES_DB=scrapy2
-     web:
-       build: galeria
-       command: python /usr/src/app/rest/manage.py runserver
-       volumes:
-          - .:/usr/src/app/app
-       ports:
-         - "8080:8080"
-       links:
-         - db
+   web:
+     build: galeria
+     command: python /app/rest/manage.py runserver
+     volumes:
+        - .:/app
+     ports:
+       - "8080:8080"
+     links:
+       - db

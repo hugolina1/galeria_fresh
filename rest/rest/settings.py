@@ -79,9 +79,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'scrapy2',
-        'USER': 'jacek',
-        'PASSWORD': 'raczkowski',
-        'HOST': 'db',
+        'USER': 'bwafc',
+        'PASSWORD': 'linijka',
+        'HOST': '',
         'PORT': '5432'
     }
 }

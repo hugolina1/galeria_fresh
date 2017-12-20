@@ -1,17 +1,20 @@
 FROM python:3.6
 
 # set working directory
-RUN mkdir -p /usr/src/app
-WORKDIR /usr/src/app
+RUN mkdir -p /app
+WORKDIR /app
 
 # add requirements (to leverage Docker cache)
-ADD ./requirements.txt /usr/src/app/requirements.txt
+ADD ./requirements.txt /app/requirements.txt
 
 # install requirements
-RUN pip install -r /usr/src/app/requirements.txt
+RUN pip install -r /app/requirements.txt
 
 # add app
-ADD . /usr/src/app
+ADD . /app
 
 # run spider
 RUN scrapy crawl prawie
+
+COPY entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
