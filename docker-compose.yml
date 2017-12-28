@@ -2,20 +2,16 @@ version: '2'
 services:
   db:
     restart: always
-    build: docker/docker-db
+    image: postgres:9.6 
     environment:
       - POSTGRES_USER=bwafc
       - POSTGRES_PASSOWRD=linijka
       - POSTGRES_DB=scrapy2
     ports:
       - "5432:5432"
-  web:
-    build: docker/docker-web
-    command: python /code/rest/manage.py runserver 0.0.0.0:8080
+  scraper:
+    build: ./galeria
     volumes:
-      - .:/code
-    ports:
-      - "8080:8080"
+      - .:/app
     links:
       - db
-    entrypoint: /entrypoint.sh
