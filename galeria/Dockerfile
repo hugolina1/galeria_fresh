@@ -1,10 +1,10 @@
 FROM python:3.6
 RUN apt-get update
 
-RUN mkdir /app
-WORKDIR /app
-ADD . /app/
+ADD . /home/galeria
 
-RUN pip install -r /app/requirements.txt
+RUN pip install -r /home/galeria/requirements.txt
 
-ENTRYPOINT scrapy crawl prawie
+COPY start_crawl.py /cmd/start_crawl.py
+
+ENTRYPOINT python /cmd/start_crawl.py

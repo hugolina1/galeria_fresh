@@ -1,0 +1,1 @@
+cmd=['scrapy crawl prawie']
