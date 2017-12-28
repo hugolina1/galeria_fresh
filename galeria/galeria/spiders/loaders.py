@@ -10,15 +10,15 @@ from scrapy.http import Request
 
 class BasicSpider(scrapy.Spider):
     name = 'prawie'
-    start_urls = ['http://galeriazyskow.pl/kategoria/analizy/',
-                  'http://galeriazyskow.pl/kategoria/aktualnosci/',
-                  'http://galeriazyskow.pl/kategoria/analizy-akcji/',
-                  'http://galeriazyskow.pl/kategoria/analizy-wideo/',
-                  'http://galeriazyskow.pl/kategoria/ekonomia/',
+    start_urls = [#'http://galeriazyskow.pl/kategoria/analizy/',
+                  #'http://galeriazyskow.pl/kategoria/aktualnosci/',
+                  #'http://galeriazyskow.pl/kategoria/analizy-akcji/',
+                  #'http://galeriazyskow.pl/kategoria/analizy-wideo/',
+                  #'http://galeriazyskow.pl/kategoria/ekonomia/',
                   'http://galeriazyskow.pl/kategoria/forex/',
-                  'http://galeriazyskow.pl/kategoria/komentarze-gieldowe/',
-                  'http://galeriazyskow.pl/kategoria/polecane/',
-                  'http://galeriazyskow.pl/kategoria/systemy-na-glownej/',
+                  #'http://galeriazyskow.pl/kategoria/komentarze-gieldowe/',
+                  #'http://galeriazyskow.pl/kategoria/polecane/',
+                  #'http://galeriazyskow.pl/kategoria/systemy-na-glownej/',
                  ]
 
     def parse(self, response):
