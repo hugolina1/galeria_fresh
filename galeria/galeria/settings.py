@@ -16,10 +16,10 @@ NEWSPIDER_MODULE = 'galeria.spiders'
 
 DATABASE = {
    'drivername': 'postgres',
-   'host': 'localhost',
+   'host': 'db',
    'port': '5432',
-   'username': 'jacek',
-   'password': 'raczkowski',
+   'username': 'bwafc',
+   'password': 'linijka',
    'database': 'scrapy2'
 }
 

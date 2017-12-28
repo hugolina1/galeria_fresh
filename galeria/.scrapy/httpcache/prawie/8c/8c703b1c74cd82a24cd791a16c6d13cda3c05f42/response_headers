@@ -1,6 +1,6 @@
-Content-Encoding: gzip
-Vary: Accept-Encoding,User-Agent
+Date: Thu, 28 Dec 2017 08:29:29 GMT
 Server: Apache
 Link: <http://galeriazyskow.pl/wp-json/>; rel="https://api.w.org/", <http://galeriazyskow.pl/?p=4910>; rel=shortlink
-Date: Wed, 20 Dec 2017 22:01:14 GMT
+Vary: Accept-Encoding,User-Agent
+Content-Encoding: gzip
 Content-Type: text/html; charset=UTF-8

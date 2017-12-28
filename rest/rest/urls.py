@@ -20,7 +20,7 @@ from rest.api.views import PostListCreateAPIView
 
 urlpatterns = [
     url(
-        regex=r'^api/$',
+        regex=r'^apis/$',
         view=PostListCreateAPIView.as_view(),
         name='post_rest_api'
     )

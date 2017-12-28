@@ -25,7 +25,7 @@ SECRET_KEY = 'b1o!ycqj^(x8y%0d4w9+ul&znncoe2dzqc5pbt_wet7fqz4415'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'rest'
+    'rest',
+    'psycopg2'
 ]
 
 MIDDLEWARE = [
@@ -81,7 +82,7 @@ DATABASES = {
         'NAME': 'scrapy2',
         'USER': 'bwafc',
         'PASSWORD': 'linijka',
-        'HOST': '',
+        'HOST': 'db',
         'PORT': '5432'
     }
 }

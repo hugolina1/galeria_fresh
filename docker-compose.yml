@@ -1,18 +1,21 @@
 version: '2'
 services:
-   db:
-     restart: always
-     image: postgres:9.6
-     environment:
-       - POSTGRES_USER=bwafc
-       - POSTGRES_PASSWORD=linijka
-       - POSTGRES_DB=scrapy2
-   web:
-     build: galeria
-     command: python /app/rest/manage.py runserver
-     volumes:
-        - .:/app
-     ports:
-       - "8080:8080"
-     links:
-       - db
+  db:
+    restart: always
+    build: docker/docker-db
+    environment:
+      - POSTGRES_USER=bwafc
+      - POSTGRES_PASSOWRD=linijka
+      - POSTGRES_DB=scrapy2
+    ports:
+      - "5432:5432"
+  web:
+    build: docker/docker-web
+    command: python /code/rest/manage.py runserver 0.0.0.0:8080
+    volumes:
+      - .:/code
+    ports:
+      - "8080:8080"
+    links:
+      - db
+    entrypoint: /entrypoint.sh
